@@ -151,7 +151,7 @@
 <wire x1="0" y1="64.77" x2="0" y2="3.81" width="0" layer="20"/>
 <dimension x1="0" y1="3.81" x2="66.675" y2="3.81" x3="33.3375" y3="-0.27" textsize="1.778" layer="48"/>
 <dimension x1="0" y1="64.77" x2="0" y2="3.81" x3="-8.08" y3="34.29" textsize="1.778" layer="48" dtype="vertical"/>
-<rectangle x1="5.969" y1="50.038" x2="32.766" y2="60.706" layer="21"/>
+<rectangle x1="6.985" y1="50.038" x2="33.782" y2="60.706" layer="21"/>
 <hole x="13.97" y="58.42" drill="3.2"/>
 </plain>
 <libraries>
