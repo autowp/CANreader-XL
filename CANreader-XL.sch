@@ -14339,12 +14339,13 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="3.5" y1="-4" x2="3.5" y2="-3" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="-2.9" x2="-1.5" y2="-4" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0.127" layer="51"/>
-<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-4" x2="1.5" y2="-2.9" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-2.9" x2="-2.5" y2="-3" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-2.9" x2="-1.5" y2="-2.9" width="0.127" layer="51" curve="-90"/>
 <wire x1="1.5" y1="-2.9" x2="2.5" y2="-2.9" width="0.127" layer="51" curve="-90"/>
 <wire x1="2.5" y1="-2.9" x2="2.5" y2="-3" width="0.127" layer="51"/>
-<wire x1="1.5" y1="-3" x2="1.5" y2="-2.9" width="0.127" layer="51"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-15.24" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -17632,9 +17633,9 @@ W = angled&lt;p&gt;
 <part name="X7" library="con-lsta" deviceset="FE10-2W" device="" value="LAN"/>
 <part name="X2" library="pinhead" deviceset="PINHD-1X4" device="" value="SWD"/>
 <part name="X3" library="pinhead" deviceset="PINHD-2X3" device="/90" value="GPIO"/>
-<part name="LED2" library="led" deviceset="LED" device="3MM" value="HC-DATA"/>
-<part name="LED3" library="led" deviceset="LED" device="3MM" value="HC-CONN"/>
-<part name="LED1" library="led" deviceset="LED" device="3MM" value="USER"/>
+<part name="LED2" library="led" deviceset="LED" device="3MM" value="BT-DAT"/>
+<part name="LED3" library="led" deviceset="LED" device="3MM" value="BT-CON"/>
+<part name="LED1" library="led" deviceset="LED" device="3MM" value="SYS"/>
 <part name="X5" library="pinhead" deviceset="PINHD-2X3" device="/90" value="CAN"/>
 <part name="X8" library="STM32_CAN-USB" deviceset="SS12F27" device="" value="TERM"/>
 <part name="X6" library="STM32_CAN-USB" deviceset="SS12F27" device="" value="SLEEP"/>
@@ -18372,17 +18373,6 @@ W = angled&lt;p&gt;
 <junction x="73.66" y="182.88"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 </segment>
-<segment>
-<wire x1="-5.08" y1="111.76" x2="-5.08" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="+"/>
-<pinref part="IC3" gate="G$1" pin="VCC"/>
-<wire x1="-22.86" y1="134.62" x2="-15.24" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="134.62" x2="-15.24" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="114.3" x2="-5.08" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
-<junction x="-5.08" y="114.3"/>
-<label x="15.24" y="114.3" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="N$9" class="0">
 <segment>
@@ -19086,6 +19076,17 @@ W = angled&lt;p&gt;
 <wire x1="246.38" y1="96.52" x2="246.38" y2="99.06" width="0.1524" layer="91"/>
 <label x="246.38" y="99.06" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VCC"/>
+<wire x1="-22.86" y1="134.62" x2="-15.24" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="134.62" x2="-15.24" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="114.3" x2="-5.08" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="+"/>
+<wire x1="-5.08" y1="114.3" x2="7.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="111.76" x2="-5.08" y2="114.3" width="0.1524" layer="91"/>
+<junction x="-5.08" y="114.3"/>
+<label x="7.62" y="114.3" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="TJA_INH" class="0">
 <segment>
@@ -19150,7 +19151,6 @@ W = angled&lt;p&gt;
 </sheets>
 <errors>
 <approved hash="104,1,243.84,60.96,IC2,VCC,+5V,,,"/>
-<approved hash="104,1,-22.86,134.62,IC3,VCC,BAT,,,"/>
 <approved hash="202,1,-22.86,66.04,X1,4,,,,"/>
 <approved hash="104,1,-22.86,182.88,F1,1,+12V,,,"/>
 <approved hash="104,1,60.96,-22.86,IC5,VDDA,+3V3,,,"/>
