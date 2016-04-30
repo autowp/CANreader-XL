@@ -61,7 +61,6 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="no"/>
 <layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
@@ -74,29 +73,17 @@
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="no" active="yes"/>
-<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="129" name="top_silk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
-<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="DrillLegend" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
@@ -127,15 +114,6 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -14479,6 +14457,32 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="51"/>
 <rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="51"/>
 </package>
+<package name="SOIC8-1.27-5X4MM">
+<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.96890625" y1="-1.8" x2="-2.5" y2="-1.26890625" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.26890625" x2="-2.5" y2="2" width="0.127" layer="21"/>
+<circle x="-2.921" y="-2.032" radius="0.3302" width="0" layer="21"/>
+<smd name="1" x="-1.905" y="-2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-0.635" y="-2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="0.635" y="-2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="1.905" y="-2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="1.905" y="2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="0.635" y="2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="-0.635" y="2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="-1.905" y="2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
+<text x="-3.175" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
+<text x="0.635" y="-1.905" size="0.635" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.5" y1="-2" x2="2.5" y2="2" layer="39"/>
+<wire x1="-2.5" y1="2" x2="-2.3" y2="2" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="2" x2="-1.1" y2="2" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="2" x2="0.2" y2="2" width="0.127" layer="21"/>
+<wire x1="1.1" y1="2" x2="1.4" y2="2" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-2" x2="1.4" y2="-2" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-2" x2="0.2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-2" x2="-1.1" y2="-2" width="0.127" layer="21"/>
+<wire x1="2.3" y1="2" x2="2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-2" x2="2.5" y2="-2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TJA1054T">
@@ -14657,6 +14661,22 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="INTERFACE-MCP2551-I/SN">
+<wire x1="-10.16" y1="6.35" x2="-10.16" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-6.35" x2="10.16" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-6.35" x2="10.16" y2="6.35" width="0.254" layer="94"/>
+<wire x1="10.16" y1="6.35" x2="-10.16" y2="6.35" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.27" layer="95" ratio="10">&gt;name</text>
+<text x="-3.81" y="7.62" size="1.27" layer="96" ratio="10">&gt;value</text>
+<pin name="TXD" x="-15.24" y="3.81" length="middle"/>
+<pin name="VSS" x="-15.24" y="1.27" length="middle"/>
+<pin name="VDD" x="-15.24" y="-1.27" length="middle"/>
+<pin name="RXD" x="-15.24" y="-3.81" length="middle"/>
+<pin name="VREF" x="15.24" y="-3.81" length="middle" rot="R180"/>
+<pin name="CANL" x="15.24" y="-1.27" length="middle" rot="R180"/>
+<pin name="CANH" x="15.24" y="1.27" length="middle" rot="R180"/>
+<pin name="RS" x="15.24" y="3.81" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15076,6 +15096,32 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INTERFACE-MCP2551-I/SN(SOIC8)" prefix="U" uservalue="yes">
+<description>310070024</description>
+<gates>
+<gate name="G$1" symbol="INTERFACE-MCP2551-I/SN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8-1.27-5X4MM">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="RS" pad="8"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VREF" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="MCP2551-I/SN"/>
+<attribute name="VALUE" value="MCP2551-I/SN-SOIC8" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -17182,82 +17228,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="CAN_Shiel_Lib">
-<packages>
-<package name="SO08">
-<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.96890625" y1="-1.8" x2="-2.5" y2="-1.26890625" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-1.26890625" x2="-2.5" y2="2" width="0.127" layer="21"/>
-<circle x="-2.921" y="-2.032" radius="0.3302" width="0" layer="21"/>
-<smd name="1" x="-1.905" y="-2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="-0.635" y="-2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="0.635" y="-2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="1.905" y="-2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-<smd name="5" x="1.905" y="2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-<smd name="6" x="0.635" y="2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-<smd name="7" x="-0.635" y="2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-<smd name="8" x="-1.905" y="2.7" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-<text x="-3.175" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
-<text x="0.635" y="-1.905" size="0.635" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.5" y1="-2" x2="2.5" y2="2" layer="39"/>
-<wire x1="-2.5" y1="2" x2="-2.3" y2="2" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="2" x2="-1.1" y2="2" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="2" x2="0.2" y2="2" width="0.127" layer="21"/>
-<wire x1="1.1" y1="2" x2="1.4" y2="2" width="0.127" layer="21"/>
-<wire x1="1.1" y1="-2" x2="1.4" y2="-2" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-2" x2="0.2" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="-2" x2="-1.1" y2="-2" width="0.127" layer="21"/>
-<wire x1="2.3" y1="2" x2="2.5" y2="2" width="0.127" layer="21"/>
-<wire x1="2.3" y1="-2" x2="2.5" y2="-2" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="INTERFACE-MCP2551-I/SN">
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="8.89" size="1.27" layer="95" ratio="10">&gt;name</text>
-<text x="-3.81" y="8.89" size="1.27" layer="96" ratio="10">&gt;value</text>
-<pin name="TXD" x="-15.24" y="5.08" length="middle"/>
-<pin name="VSS" x="-15.24" y="2.54" length="middle"/>
-<pin name="VDD" x="-15.24" y="0" length="middle"/>
-<pin name="RXD" x="-15.24" y="-2.54" length="middle"/>
-<pin name="VREF" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="CANL" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="CANH" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="RS" x="15.24" y="5.08" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="INTERFACE-MCP2551-I/SN(SOIC8)" prefix="U" uservalue="yes">
-<description>310070024</description>
-<gates>
-<gate name="G$1" symbol="INTERFACE-MCP2551-I/SN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SO08">
-<connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="RS" pad="8"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VREF" pad="5"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="MCP2551-I/SN"/>
-<attribute name="VALUE" value="MCP2551-I/SN-SOIC8" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-lsta">
 <description>&lt;b&gt;Female Headers etc.&lt;/b&gt;&lt;p&gt;
 Naming:&lt;p&gt;
@@ -18032,7 +18002,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="C26" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="U2" library="CAN_Shiel_Lib" deviceset="INTERFACE-MCP2551-I/SN(SOIC8)" device="" value="MCP2551"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
@@ -18075,6 +18044,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="X3" library="STM32_CAN-USB" deviceset="PINHD-2X3" device="/90" value="GPIO"/>
 <part name="X4" library="STM32_CAN-USB" deviceset="PINHD-1X4" device="/90" value="UART"/>
 <part name="X2" library="STM32_CAN-USB" deviceset="PINHD-1X4" device="" value="SWD"/>
+<part name="IC1" library="STM32_CAN-USB" deviceset="INTERFACE-MCP2551-I/SN(SOIC8)" device="" value="MCP2551"/>
 </parts>
 <sheets>
 <sheet>
@@ -18207,7 +18177,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </instance>
 <instance part="C26" gate="G$1" x="-68.58" y="-86.36" rot="R180"/>
 <instance part="GND26" gate="1" x="-68.58" y="-93.98"/>
-<instance part="U2" gate="G$1" x="-50.8" y="-73.66"/>
 <instance part="R6" gate="G$1" x="-10.16" y="-68.58"/>
 <instance part="GND27" gate="1" x="-2.54" y="-76.2"/>
 <instance part="P+8" gate="1" x="-88.9" y="-60.96"/>
@@ -18258,6 +18227,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <instance part="X3" gate="A" x="-22.86" y="-30.48"/>
 <instance part="X4" gate="A" x="-22.86" y="-5.08"/>
 <instance part="X2" gate="A" x="-66.04" y="68.58"/>
+<instance part="IC1" gate="G$1" x="-50.8" y="-72.39"/>
 </instances>
 <busses>
 </busses>
@@ -18515,8 +18485,8 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="-86.36" y1="-81.28" x2="-86.36" y2="-71.12" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VSS"/>
 <wire x1="-86.36" y1="-71.12" x2="-66.04" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="GND30" gate="1" pin="GND"/>
@@ -18794,12 +18764,12 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <segment>
 <pinref part="P+8" gate="1" pin="+5V"/>
 <wire x1="-88.9" y1="-63.5" x2="-88.9" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VDD"/>
 <wire x1="-66.04" y1="-73.66" x2="-68.58" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="-73.66" x2="-88.9" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-81.28" x2="-68.58" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="-68.58" y="-73.66"/>
+<pinref part="IC1" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 <net name="TJAWAKE" class="0">
@@ -19381,16 +19351,16 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="RS"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-35.56" y1="-68.58" x2="-15.24" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="RS"/>
 </segment>
 </net>
 <net name="CAN2_TX" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="TXD"/>
 <wire x1="-66.04" y1="-68.58" x2="-71.12" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-71.12" y="-68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="TXD"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="MCU" pin="PB6"/>
@@ -19400,9 +19370,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </net>
 <net name="CAN2_RX" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="RXD"/>
 <wire x1="-66.04" y1="-76.2" x2="-71.12" y2="-76.2" width="0.1524" layer="91"/>
 <label x="-71.12" y="-76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="RXD"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="MCU" pin="PB5"/>
@@ -19446,9 +19416,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </net>
 <net name="CAN2L" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="CANL"/>
 <wire x1="-35.56" y1="-73.66" x2="-22.86" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-22.86" y="-73.66" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="CANL"/>
 </segment>
 <segment>
 <label x="180.34" y="132.08" size="1.778" layer="95" xref="yes"/>
@@ -19467,9 +19437,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </net>
 <net name="CAN2H" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="CANH"/>
 <wire x1="-35.56" y1="-71.12" x2="-33.02" y2="-71.12" width="0.1524" layer="91"/>
 <label x="-33.02" y="-71.12" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="CANH"/>
 </segment>
 <segment>
 <label x="142.24" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
