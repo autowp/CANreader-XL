@@ -17938,12 +17938,12 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="22pF"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="22pF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="0,1"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="IC2" library="STM32_CAN-USB" deviceset="TJA1054T" device="" value="TJA1055T"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="5.6K"/>
@@ -17952,11 +17952,11 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="100K"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="3K3"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="IC4" library="STM32_CAN-USB" deviceset="LM1117IMPX-3.3" device=""/>
@@ -17967,7 +17967,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="680"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="3.9K"/>
-<part name="C13" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="STM32_CAN-USB" deviceset="SCHOTTKY-DIODE" device="SMD" value="SS26"/>
@@ -17977,8 +17977,8 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="X1" library="STM32_CAN-USB" deviceset="MINI-USB-" device="UX60-MB-5ST" value="MINI-USB"/>
-<part name="C17" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
-<part name="C18" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C18" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
@@ -17987,10 +17987,10 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="DR1" library="STM32_CAN-USB" deviceset="CDRH127" device="" value="CDRH127 100u"/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0805" value="1nF"/>
-<part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
 <part name="C22" library="rcl" deviceset="C-EU" device="C0805" value="1nF"/>
-<part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="C24" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
@@ -18007,7 +18007,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="IC5" library="micro-stm_v2" deviceset="STM32F107V*T" device="" technology="B"/>
 <part name="U1" library="Bluetooth HC-05" deviceset="HC_05" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="470"/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="470"/>
@@ -18052,7 +18052,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
-<part name="C27" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C27" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
