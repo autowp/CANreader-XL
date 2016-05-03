@@ -17945,7 +17945,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="IC2" library="STM32_CAN-USB" deviceset="TJA1054T" device="" value="TJA1055T"/>
+<part name="IC2" library="STM32_CAN-USB" deviceset="TJA1054T" device="" value="TJA1055T/3"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="5.6K"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="5.6K"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
