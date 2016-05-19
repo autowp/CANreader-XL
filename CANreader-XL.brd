@@ -162,7 +162,7 @@
 <text x="3.048" y="5.334" size="1.016" layer="26" rot="MR270" align="bottom-center">HSL</text>
 <text x="4.826" y="5.334" size="1.016" layer="26" rot="MR270" align="bottom-center">HSH</text>
 <text x="3.048" y="2.286" size="1.016" layer="26" rot="MR270" align="bottom-center">GND</text>
-<text x="4.826" y="2.286" size="1.016" layer="26" rot="MR270" align="bottom-center">3.3</text>
+<text x="4.826" y="2.286" size="1.016" layer="26" rot="MR270" align="bottom-center">+12</text>
 <text x="74.93" y="19.304" size="1.016" layer="22" rot="MR90" align="bottom-center">GND</text>
 <text x="74.93" y="16.764" size="1.016" layer="22" rot="MR90" align="bottom-center">A5</text>
 <text x="74.93" y="14.224" size="1.016" layer="22" rot="MR90" align="bottom-center">3.3</text>
