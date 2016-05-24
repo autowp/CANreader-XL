@@ -18404,7 +18404,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="LED1" library="led" deviceset="LED" device="3MM" value="SYS"/>
 <part name="SW2" library="STM32_CAN-USB" deviceset="SS12F27" device="" value="TERM"/>
 <part name="SW1" library="STM32_CAN-USB" deviceset="SS12F27" device="" value="SLEEP"/>
-<part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="R0805" value="3K3"/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
@@ -18623,7 +18622,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <instance part="LED1" gate="G$1" x="149.86" y="17.78" rot="R90"/>
 <instance part="SW2" gate="G$1" x="-55.88" y="-104.14"/>
 <instance part="SW1" gate="G$1" x="228.6" y="132.08"/>
-<instance part="GND29" gate="1" x="238.76" y="121.92"/>
 <instance part="R23" gate="G$1" x="190.5" y="91.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="189.0014" y="87.63" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="193.802" y="87.63" size="1.778" layer="96" rot="R90"/>
@@ -19005,12 +19003,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <pinref part="IC6" gate="PWR" pin="VSS@2"/>
 <pinref part="IC6" gate="PWR" pin="VSS@3"/>
 <pinref part="IC6" gate="PWR" pin="VSS@4"/>
-</segment>
-<segment>
-<pinref part="SW1" gate="G$1" pin="3"/>
-<wire x1="236.22" y1="127" x2="238.76" y2="127" width="0.1524" layer="91"/>
-<pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="238.76" y1="124.46" x2="238.76" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="MCU" pin="VSSA"/>
@@ -20045,6 +20037,11 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <junction x="-5.08" y="114.3"/>
 <label x="7.62" y="114.3" size="1.778" layer="95" xref="yes"/>
 <pinref part="C14" gate="G$1" pin="+"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="3"/>
+<wire x1="236.22" y1="127" x2="238.76" y2="127" width="0.1524" layer="91"/>
+<label x="238.76" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TJA_INH" class="0">
