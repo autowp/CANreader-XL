@@ -23336,9 +23336,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <label x="7.62" y="-48.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="MCU" pin="PB10"/>
-<wire x1="96.52" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
-<label x="99.06" y="66.04" size="1.778" layer="95" xref="yes"/>
+<label x="30.48" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="MCU" pin="PC13"/>
+<wire x1="30.48" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

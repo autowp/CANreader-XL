@@ -4099,8 +4099,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="CAN2_STBY">
 <contactref element="IC5" pad="8"/>
-<contactref element="IC1" pad="29"/>
-<wire x1="13.302" y1="12.827" x2="58.582" y2="37.048" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="2"/>
+<wire x1="13.302" y1="12.827" x2="49.582" y2="29.048" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
