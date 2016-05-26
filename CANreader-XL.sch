@@ -23197,8 +23197,12 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="-129.54" x2="160.02" y2="-127" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="-127" x2="148.59" y2="-127" width="0.1524" layer="91"/>
-<label x="148.59" y="-127" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="151.13" y="-127" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="152.4" y1="-127" x2="151.13" y2="-127" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-127" x2="203.2" y2="-127" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="TD-"/>
+<wire x1="152.4" y1="-127" x2="160.02" y2="-127" width="0.1524" layer="91"/>
+<junction x="160.02" y="-127"/>
 </segment>
 </net>
 <net name="RD+" class="0">
@@ -23314,12 +23318,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="G-"/>
 <wire x1="262.89" y1="-163.83" x2="262.89" y2="-160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<wire x1="160.02" y1="-127" x2="203.2" y2="-127" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="TD-"/>
 </segment>
 </net>
 <net name="N$30" class="0">
