@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21648,7 +21648,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <instance part="GND15" gate="1" x="147.32" y="40.64"/>
 <instance part="R10" gate="G$1" x="139.7" y="45.72"/>
 <instance part="GND16" gate="1" x="7.62" y="-12.7"/>
-<instance part="GND17" gate="1" x="-33.02" y="-12.7"/>
+<instance part="GND17" gate="1" x="-30.48" y="-12.7"/>
 <instance part="D4" gate="D$1" x="-40.64" y="71.12" rot="R90"/>
 <instance part="GND18" gate="1" x="180.34" y="162.56" rot="R270"/>
 <instance part="R11" gate="G$1" x="200.66" y="50.8" rot="R90"/>
@@ -21928,9 +21928,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="-25.4" y1="-7.62" x2="-33.02" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="-7.62" x2="-33.02" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="X4" gate="G$1" pin="4"/>
+<wire x1="-30.48" y1="-10.16" x2="-30.48" y2="0" width="0.1524" layer="91"/>
+<pinref part="X4" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="0" x2="-25.4" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -22236,9 +22236,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </segment>
 <segment>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<wire x1="-25.4" y1="0" x2="-33.02" y2="0" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="0" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="X4" gate="G$1" pin="1"/>
+<wire x1="-33.02" y1="-5.08" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="X4" gate="G$1" pin="3"/>
+<wire x1="-33.02" y1="-5.08" x2="-25.4" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="53.34" y1="-68.58" x2="55.88" y2="-68.58" width="0.1524" layer="91"/>
@@ -22423,18 +22423,14 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </net>
 <net name="CAN1_RX" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="RXD"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="86.36" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
-<junction x="200.66" y="66.04"/>
-<wire x1="200.66" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
-<label x="172.72" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <label x="99.06" y="60.96" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC1" gate="MCU" pin="PB8"/>
 <wire x1="99.06" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="RXD"/>
+<wire x1="-45.72" y1="-55.88" x2="-50.8" y2="-55.88" width="0.1524" layer="91"/>
+<label x="-50.8" y="-55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -22710,9 +22706,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="30.48" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="-50.8" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="-25.4" y1="-2.54" x2="-50.8" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="X4" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="TX"/>
+<wire x1="193.04" y1="0" x2="190.5" y2="0" width="0.1524" layer="91"/>
+<label x="190.5" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART4_TX" class="0">
@@ -22722,9 +22718,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="48.26" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="-35.56" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="-35.56" y1="-5.08" x2="-25.4" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="X4" gate="G$1" pin="3"/>
+<pinref part="U1" gate="G$1" pin="RX"/>
+<wire x1="193.04" y1="-2.54" x2="172.72" y2="-2.54" width="0.1524" layer="91"/>
+<label x="172.72" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -22775,9 +22771,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="48.26" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="RX"/>
-<wire x1="193.04" y1="-2.54" x2="170.18" y2="-2.54" width="0.1524" layer="91"/>
-<label x="170.18" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="X4" gate="G$1" pin="2"/>
+<wire x1="-25.4" y1="-2.54" x2="-35.56" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-35.56" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART5_RX" class="0">
@@ -22787,9 +22783,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="48.26" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="TX"/>
-<wire x1="193.04" y1="0" x2="190.5" y2="0" width="0.1524" layer="91"/>
-<label x="190.5" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="X4" gate="G$1" pin="4"/>
+<wire x1="-25.4" y1="-7.62" x2="-35.56" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-35.56" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RMII_MDC" class="0">
@@ -22912,14 +22908,14 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </net>
 <net name="CAN1_TX" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="TXD"/>
-<wire x1="213.36" y1="68.58" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
-<label x="187.96" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <label x="116.84" y="63.5" size="1.778" layer="95" xref="yes"/>
 <wire x1="96.52" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="MCU" pin="PB9"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="TXD"/>
+<wire x1="-45.72" y1="-48.26" x2="-50.8" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-50.8" y="-48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TJA_EN" class="0">
@@ -22973,26 +22969,30 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </net>
 <net name="CAN2_TX" class="0">
 <segment>
-<wire x1="-45.72" y1="-48.26" x2="-50.8" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-50.8" y="-48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="TXD"/>
-</segment>
-<segment>
 <label x="99.06" y="55.88" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC1" gate="MCU" pin="PB6"/>
 <wire x1="99.06" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="TXD"/>
+<wire x1="213.36" y1="68.58" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
+<label x="187.96" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="CAN2_RX" class="0">
-<segment>
-<wire x1="-45.72" y1="-55.88" x2="-50.8" y2="-55.88" width="0.1524" layer="91"/>
-<label x="-50.8" y="-55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="RXD"/>
-</segment>
 <segment>
 <label x="116.84" y="53.34" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC1" gate="MCU" pin="PB5"/>
 <wire x1="116.84" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="RXD"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="66.04" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="66.04" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<junction x="200.66" y="66.04"/>
+<label x="172.72" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAN1H" class="0">
