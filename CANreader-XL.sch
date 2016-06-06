@@ -22357,7 +22357,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <junction x="170.18" y="-142.24"/>
 </segment>
 <segment>
-<wire x1="190.5" y1="-106.68" x2="190.5" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-119.38" x2="190.5" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="+3V21" gate="G$1" pin="+3V3"/>
 <pinref part="C39" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="-73.66" x2="190.5" y2="-71.12" width="0.1524" layer="91"/>
@@ -22368,6 +22368,12 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="195.58" y1="-73.66" x2="190.5" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="-76.2" x2="195.58" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="195.58" y="-73.66"/>
+<pinref part="J1" gate="G$1" pin="P5"/>
+<wire x1="203.2" y1="-119.38" x2="190.5" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="P4"/>
+<wire x1="203.2" y1="-121.92" x2="190.5" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-121.92" x2="190.5" y2="-119.38" width="0.1524" layer="91"/>
+<junction x="190.5" y="-119.38"/>
 </segment>
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -23402,13 +23408,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="G-"/>
 <wire x1="262.89" y1="-163.83" x2="262.89" y2="-160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="P5"/>
-<wire x1="203.2" y1="-119.38" x2="190.5" y2="-119.38" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="-119.38" x2="190.5" y2="-106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN2_STBY" class="0">
