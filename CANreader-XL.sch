@@ -21553,6 +21553,8 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="470"/>
+<part name="C41" library="rcl" deviceset="C-EU" device="C0805" value="1mF"/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21785,6 +21787,11 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <instance part="+3V7" gate="G$1" x="7.62" y="7.62"/>
 <instance part="R6" gate="G$1" x="17.78" y="-2.54"/>
 <instance part="R9" gate="G$1" x="248.92" y="-25.4"/>
+<instance part="C41" gate="G$1" x="-40.64" y="53.34" smashed="yes">
+<attribute name="NAME" x="-43.561" y="50.038" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-37.973" y="45.466" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND24" gate="1" x="-40.64" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -22192,6 +22199,11 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <pinref part="C40" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="-12.7" y1="-68.58" x2="-12.7" y2="-71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND24" gate="1" pin="GND"/>
+<pinref part="C41" gate="G$1" pin="2"/>
+<wire x1="-40.64" y1="45.72" x2="-40.64" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -22973,6 +22985,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <junction x="-30.48" y="58.42"/>
 <label x="-30.48" y="40.64" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="C41" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="55.88" x2="-40.64" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-40.64" y="58.42"/>
 </segment>
 </net>
 <net name="CAN2_TX" class="0">
