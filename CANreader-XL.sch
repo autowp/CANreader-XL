@@ -14046,19 +14046,6 @@ Source: &lt;a href="http://www.cooperbussmann.com/pdf/c73e479f-f867-4c64-ae26-9c
 <wire x1="-3.81" y1="1.905" x2="-3.81" y2="-1.905" width="0.127" layer="21"/>
 <text x="-3.175" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="DO214AA">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.254" layer="51"/>
-<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.254" layer="51"/>
-<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.254" layer="51"/>
-<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.254" layer="51"/>
-<smd name="C" x="-2.55" y="0" dx="1.8" dy="2.2" layer="1"/>
-<smd name="A" x="2.55" y="0" dx="1.8" dy="2.2" layer="1"/>
-<text x="-2.64" y="1.436" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.64" y="-2.706" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.75" y1="-0.7" x2="-2.5" y2="0.65" layer="51"/>
-<rectangle x1="2.5" y1="-0.7" x2="2.75" y2="0.65" layer="51"/>
-</package>
 <package name="MS85">
 <description>SMD &lt;B&gt;POWER INDUCTOR&lt;/B&gt;&lt;p&gt;
 high current</description>
@@ -14504,26 +14491,6 @@ Source: http://www.national.com/ds/DP/DP83848VYB.pdf</description>
 <text x="-3.302" y="-3.556" size="1.27" layer="94">&gt;VALUE</text>
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
-<symbol name="SCHOTTKY-BIDIR">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
-<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-1.27" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.27" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="SWITCH-3P">
 <wire x1="7.62" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
@@ -14862,22 +14829,6 @@ Source: http://www.national.com/ds/DP/DP83848VYB.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SM6T18CA">
-<gates>
-<gate name="G$1" symbol="SCHOTTKY-BIDIR" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="DO214AA">
-<connects>
-<connect gate="G$1" pin="1" pad="A"/>
-<connect gate="G$1" pin="2" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17367,6 +17318,34 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
 <rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
 </package>
+<package name="SMBG">
+<description>&lt;b&gt;DO-214AA GULL-WING&lt;/b&gt;&lt;p&gt;
+Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppressor. Data Sheet</description>
+<wire x1="2.24" y1="1.85" x2="2.24" y2="-1.85" width="0.1016" layer="21"/>
+<wire x1="2.24" y1="-1.85" x2="-2.24" y2="-1.85" width="0.1016" layer="21"/>
+<wire x1="-2.24" y1="-1.85" x2="-2.24" y2="1.85" width="0.1016" layer="21"/>
+<wire x1="-2.24" y1="1.85" x2="2.24" y2="1.85" width="0.1016" layer="21"/>
+<smd name="C" x="-3.17" y="0" dx="1.27" dy="2.16" layer="1"/>
+<smd name="A" x="3.17" y="0" dx="1.27" dy="2.16" layer="1" rot="R180"/>
+<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.24" y1="-1.05" x2="-2.23" y2="1.05" layer="51"/>
+<rectangle x1="2.24" y1="-1.05" x2="3.24" y2="1.05" layer="51"/>
+</package>
+<package name="SMBJ">
+<description>&lt;b&gt;DO-214AA Modified J_BEND&lt;/b&gt;&lt;p&gt;
+Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppressor. Data Sheet</description>
+<wire x1="2.24" y1="1.92" x2="2.24" y2="-1.92" width="0.1016" layer="51"/>
+<wire x1="2.24" y1="-1.92" x2="-2.24" y2="-1.92" width="0.1016" layer="21"/>
+<wire x1="-2.24" y1="-1.92" x2="-2.24" y2="1.92" width="0.1016" layer="51"/>
+<wire x1="-2.24" y1="1.92" x2="2.24" y2="1.92" width="0.1016" layer="21"/>
+<smd name="C" x="-2.03" y="0" dx="1.78" dy="2.16" layer="1"/>
+<smd name="A" x="2.04" y="0" dx="1.78" dy="2.16" layer="1" rot="R180"/>
+<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.8" y1="-1.1" x2="-2.25" y2="1.1" layer="51"/>
+<rectangle x1="2.25" y1="-1.1" x2="2.8" y2="1.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SCHOTTKY">
@@ -17383,6 +17362,19 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="SUPPRESSOR">
+<wire x1="1.27" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<text x="2.794" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.794" y="-0.889" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -17501,6 +17493,32 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </technologies>
 </device>
 <device name="SMC" package="SMC">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SUPPRESSOR-" prefix="D" uservalue="yes">
+<description>&lt;b&gt;Suppressor diode&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SUPPRESSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMBG" package="SMBG">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMBJ" package="SMBJ">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -19446,7 +19464,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </class>
 </classes>
 <parts>
-<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP" value="25MHz"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="22pF"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="22pF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -19491,7 +19508,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="STM32_CAN-USB" deviceset="FUSE" device="" value="EST-157000 2A"/>
-<part name="D3" library="STM32_CAN-USB" deviceset="SM6T18CA" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="DR1" library="STM32_CAN-USB" deviceset="CDRH127" device="" value="CDRH127 100u"/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0805" value="1nF"/>
@@ -19627,16 +19643,14 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="JP2" library="STM32_CAN-USB" deviceset="PINHD-1X3" device="" value="BOOT"/>
 <part name="X5" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS16_?" device="43045-1600"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49S" value="25MHz"/>
+<part name="D3" library="diode" deviceset="SUPPRESSOR-" device="SMBJ" value="SM6T18CA"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="Q1" gate="G$1" x="33.02" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.972" y="23.368" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="25.4" y="16.51" size="1.778" layer="96"/>
-</instance>
 <instance part="C1" gate="G$1" x="22.86" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.558" y="28.321" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="14.986" y="22.733" size="1.778" layer="96"/>
@@ -19710,7 +19724,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <instance part="P+6" gate="1" x="-40.64" y="83.82"/>
 <instance part="GND11" gate="1" x="-20.32" y="53.34"/>
 <instance part="F1" gate="G$1" x="-17.78" y="182.88"/>
-<instance part="D3" gate="G$1" x="73.66" y="175.26" rot="R90"/>
 <instance part="GND13" gate="1" x="25.4" y="165.1"/>
 <instance part="DR1" gate="G$1" x="25.4" y="182.88"/>
 <instance part="C19" gate="G$1" x="-7.62" y="177.8"/>
@@ -19862,13 +19875,14 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <instance part="JP2" gate="A" x="-5.08" y="-2.54" rot="R180"/>
 <instance part="X5" gate="G$1" x="175.26" y="104.14"/>
 <instance part="GND17" gate="1" x="165.1" y="81.28"/>
+<instance part="Q1" gate="G$1" x="33.02" y="20.32" rot="R90"/>
+<instance part="D3" gate="G$1" x="73.66" y="175.26"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="25.4" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="25.4" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
@@ -19877,17 +19891,18 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="40.64" y1="25.4" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="MCU" pin="OSC_IN"/>
 <wire x1="40.64" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="15.24" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="15.24" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="MCU" pin="OSC_OUT"/>
 <wire x1="33.02" y1="15.24" x2="50.8" y2="15.24" width="0.1524" layer="91"/>
 <junction x="33.02" y="15.24"/>
+<pinref part="Q1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -19966,7 +19981,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <pinref part="C19" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="172.72" x2="-7.62" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="170.18" x2="2.54" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="D3" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="170.18" x2="12.7" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="170.18" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="170.18" x2="38.1" y2="170.18" width="0.1524" layer="91"/>
@@ -19992,6 +20006,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="25.4" y1="167.64" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
 <junction x="25.4" y="170.18"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="-68.58" y1="68.58" x2="-83.82" y2="68.58" width="0.1524" layer="91"/>
@@ -20629,12 +20644,11 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <net name="BAT1" class="0">
 <segment>
 <pinref part="DR1" gate="G$1" pin="2"/>
-<pinref part="D3" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="182.88" x2="38.1" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="182.88" x2="48.26" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="182.88" x2="58.42" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="182.88" x2="73.66" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="182.88" x2="73.66" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="182.88" x2="73.66" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="180.34" x2="38.1" y2="182.88" width="0.1524" layer="91"/>
 <junction x="38.1" y="182.88"/>
@@ -20647,6 +20661,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="73.66" y1="182.88" x2="86.36" y2="182.88" width="0.1524" layer="91"/>
 <junction x="73.66" y="182.88"/>
 <pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$9" class="0">
