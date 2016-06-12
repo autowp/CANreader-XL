@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -21391,26 +21391,26 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </net>
 <net name="LEDACT_LINK" class="0">
 <segment>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="262.89" y1="-85.09" x2="262.89" y2="-82.55" width="0.1524" layer="91"/>
-<label x="262.89" y="-82.55" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="IC7" gate="G$1" pin="LED_ACT/COL/AN_EN"/>
 <wire x1="33.02" y1="-132.08" x2="30.48" y2="-132.08" width="0.1524" layer="91"/>
 <label x="30.48" y="-132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="LED_LINK" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="262.89" y1="-173.99" x2="262.89" y2="-176.53" width="0.1524" layer="91"/>
 <label x="262.89" y="-176.53" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
+</net>
+<net name="LED_LINK" class="0">
 <segment>
 <pinref part="IC7" gate="G$1" pin="LED_LNK/AN0"/>
 <wire x1="33.02" y1="-137.16" x2="30.48" y2="-137.16" width="0.1524" layer="91"/>
 <label x="30.48" y="-137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="262.89" y1="-85.09" x2="262.89" y2="-82.55" width="0.1524" layer="91"/>
+<label x="262.89" y="-82.55" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$17" class="0">
